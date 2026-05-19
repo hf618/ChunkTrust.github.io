@@ -3,6 +3,11 @@ const activeFilters = {
   level: "all",
 };
 
+function isCardShown(video) {
+  const card = video.closest(".video-card");
+  return !card || !card.classList.contains("is-hidden");
+}
+
 function tryPlay(video) {
   video.muted = true;
   const playAttempt = video.play();
@@ -10,6 +15,69 @@ function tryPlay(video) {
   if (playAttempt && typeof playAttempt.catch === "function") {
     playAttempt.catch(() => {});
   }
+}
+
+function loadLazyVideo(video) {
+  if (video.dataset.loaded === "true") {
+    return true;
+  }
+
+  const source = video.dataset.src;
+  if (!source) {
+    return false;
+  }
+
+  video.src = source;
+  video.dataset.loaded = "true";
+  video.load();
+  return true;
+}
+
+function syncLazyVideo(video) {
+  const shouldPlay = video.dataset.inViewport === "true" && isCardShown(video);
+
+  if (shouldPlay) {
+    if (loadLazyVideo(video)) {
+      tryPlay(video);
+    }
+    return;
+  }
+
+  if (!video.paused) {
+    video.pause();
+  }
+}
+
+function syncLazyVideos() {
+  document.querySelectorAll(".lazy-video").forEach(syncLazyVideo);
+}
+
+function initLazyVideos() {
+  const videos = Array.from(document.querySelectorAll(".lazy-video"));
+
+  videos.forEach((video) => {
+    video.muted = true;
+    video.preload = "none";
+    video.dataset.inViewport = "false";
+  });
+
+  if (!("IntersectionObserver" in window)) {
+    videos.forEach((video) => {
+      video.dataset.inViewport = "true";
+      syncLazyVideo(video);
+    });
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      video.dataset.inViewport = entry.isIntersecting ? "true" : "false";
+      syncLazyVideo(video);
+    });
+  }, { rootMargin: "300px 0px", threshold: [0, 0.15, 0.5] });
+
+  videos.forEach((video) => observer.observe(video));
 }
 
 function updateGallery() {
@@ -28,7 +96,7 @@ function updateGallery() {
     }
 
     if (shouldShow) {
-      tryPlay(video);
+      syncLazyVideo(video);
     } else if (!video.paused) {
       video.pause();
     }
@@ -433,11 +501,12 @@ function initCaseStudies() {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".hero-video").forEach(tryPlay);
   bindGalleryControls();
+  initLazyVideos();
   initCaseStudies();
   updateGallery();
 });
 
 window.addEventListener("pageshow", () => {
   document.querySelectorAll(".hero-video").forEach(tryPlay);
-  updateGallery();
+  syncLazyVideos();
 });
