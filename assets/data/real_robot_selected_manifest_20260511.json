@@ -1,0 +1,1106 @@
+{
+  "created_at_local": "2026-05-11 23:33:23 CST",
+  "source_root": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts",
+  "formal_output_root": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected",
+  "package_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/Agilex_demo1_selected_formal_rollouts_sources_20260511.zip",
+  "note": "Raw episode assets are copied directly from Agilex_rollouts wave zip files, not from Agilex_demo1_pool.",
+  "layout": {
+    "raw_rollouts": "Original episode assets from source wave zips.",
+    "formal_outputs": "Rendered formal videos/previews/reports/manifests for convenience.",
+    "metadata": "README and manifest for traceability."
+  },
+  "cases": [
+    {
+      "alias": "fold",
+      "task_dir": "pi05_fold_towels_clean50",
+      "level": "01_clean",
+      "episode_id": "episode_000005",
+      "case_dir": "01_clean_episode_000005",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/fold/01_clean_episode_000005",
+      "formal_archive_dir": "formal_outputs/fold/01_clean_episode_000005",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/episode_data.npz",
+          "bytes": 421980,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/episode_metadata.json",
+          "bytes": 4235,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/left.mp4",
+          "bytes": 2868588,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/left_timestamps.csv",
+          "bytes": 51248,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/overview.mp4",
+          "bytes": 20080536,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/overview_start.json",
+          "bytes": 348,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/right.mp4",
+          "bytes": 3673272,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/right_timestamps.csv",
+          "bytes": 52148,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/top.mp4",
+          "bytes": 3365158,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/01_clean_episode_000005/top_timestamps.csv",
+          "bytes": 50348,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000005/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal.mp4",
+          "bytes": 15858877,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_manifest.json",
+          "bytes": 9497,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_preview.png",
+          "bytes": 821484,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_report.md",
+          "bytes": 1378,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/01_clean_episode_000005/fold_01_clean_episode_000005_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "fold",
+      "task_dir": "pi05_fold_towels_clean50",
+      "level": "02_randomized",
+      "episode_id": "episode_000008",
+      "case_dir": "02_randomized_episode_000008",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/fold/02_randomized_episode_000008",
+      "formal_archive_dir": "formal_outputs/fold/02_randomized_episode_000008",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/episode_data.npz",
+          "bytes": 413016,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/episode_metadata.json",
+          "bytes": 4235,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/left.mp4",
+          "bytes": 3182513,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/left_timestamps.csv",
+          "bytes": 50279,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/overview.mp4",
+          "bytes": 20871264,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/overview_start.json",
+          "bytes": 348,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/right.mp4",
+          "bytes": 3874874,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/right_timestamps.csv",
+          "bytes": 51162,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/top.mp4",
+          "bytes": 3789136,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/02_randomized_episode_000008/top_timestamps.csv",
+          "bytes": 49396,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000008/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal.mp4",
+          "bytes": 16421497,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_manifest.json",
+          "bytes": 9532,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_preview.png",
+          "bytes": 885847,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_report.md",
+          "bytes": 1388,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/02_randomized_episode_000008/fold_02_randomized_episode_000008_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "fold",
+      "task_dir": "pi05_fold_towels_clean50",
+      "level": "03_more_randomized",
+      "episode_id": "episode_000009",
+      "case_dir": "03_more_randomized_episode_000009",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/fold/03_more_randomized_episode_000009",
+      "formal_archive_dir": "formal_outputs/fold/03_more_randomized_episode_000009",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/episode_data.npz",
+          "bytes": 454938,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/episode_metadata.json",
+          "bytes": 4235,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/left.mp4",
+          "bytes": 3572326,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/left_timestamps.csv",
+          "bytes": 55694,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/overview.mp4",
+          "bytes": 24790685,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/overview_start.json",
+          "bytes": 348,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/right.mp4",
+          "bytes": 4187361,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/right_timestamps.csv",
+          "bytes": 56672,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/top.mp4",
+          "bytes": 4025964,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/fold/03_more_randomized_episode_000009/top_timestamps.csv",
+          "bytes": 54716,
+          "source_member": "eval_videos/pi05_fold_towels_clean50/episode_000009/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal.mp4",
+          "bytes": 18732645,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_manifest.json",
+          "bytes": 9567,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_preview.png",
+          "bytes": 878190,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_report.md",
+          "bytes": 1398,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/fold/03_more_randomized_episode_000009/fold_03_more_randomized_episode_000009_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "bread",
+      "task_dir": "pi05_grab_bread_clean50",
+      "level": "01_clean",
+      "episode_id": "episode_000019",
+      "case_dir": "01_clean_episode_000019",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_fourth_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/bread/01_clean_episode_000019",
+      "formal_archive_dir": "formal_outputs/bread/01_clean_episode_000019",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/episode_data.npz",
+          "bytes": 350392,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/episode_metadata.json",
+          "bytes": 4293,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/left.mp4",
+          "bytes": 2732674,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/left_timestamps.csv",
+          "bytes": 42462,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/overview.mp4",
+          "bytes": 15958628,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/overview_start.json",
+          "bytes": 348,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/right.mp4",
+          "bytes": 2260222,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/right_timestamps.csv",
+          "bytes": 43195,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/top.mp4",
+          "bytes": 2058768,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/01_clean_episode_000019/top_timestamps.csv",
+          "bytes": 41729,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000019/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal.mp4",
+          "bytes": 12519682,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_manifest.json",
+          "bytes": 9556,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_preview.png",
+          "bytes": 833221,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_report.md",
+          "bytes": 1378,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/01_clean_episode_000019/bread_01_clean_episode_000019_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "bread",
+      "task_dir": "pi05_grab_bread_clean50",
+      "level": "02_randomized",
+      "episode_id": "episode_000020",
+      "case_dir": "02_randomized_episode_000020",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_fourth_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/bread/02_randomized_episode_000020",
+      "formal_archive_dir": "formal_outputs/bread/02_randomized_episode_000020",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/episode_data.npz",
+          "bytes": 712584,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/episode_metadata.json",
+          "bytes": 4299,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/left.mp4",
+          "bytes": 5748671,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/left_timestamps.csv",
+          "bytes": 90339,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/overview.mp4",
+          "bytes": 35483655,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/overview_start.json",
+          "bytes": 348,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/right.mp4",
+          "bytes": 4882609,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/right_timestamps.csv",
+          "bytes": 91888,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/top.mp4",
+          "bytes": 4572094,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/02_randomized_episode_000020/top_timestamps.csv",
+          "bytes": 88790,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000020/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal.mp4",
+          "bytes": 28270584,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_manifest.json",
+          "bytes": 9616,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_preview.png",
+          "bytes": 793615,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_report.md",
+          "bytes": 1396,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/02_randomized_episode_000020/bread_02_randomized_episode_000020_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "bread",
+      "task_dir": "pi05_grab_bread_clean50",
+      "level": "03_more_randomized",
+      "episode_id": "episode_000021",
+      "case_dir": "03_more_randomized_episode_000021",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_fourth_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/bread/03_more_randomized_episode_000021",
+      "formal_archive_dir": "formal_outputs/bread/03_more_randomized_episode_000021",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/episode_data.npz",
+          "bytes": 662782,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/episode_metadata.json",
+          "bytes": 4297,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/left.mp4",
+          "bytes": 5670382,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/left_timestamps.csv",
+          "bytes": 82294,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/overview.mp4",
+          "bytes": 35054789,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/overview_start.json",
+          "bytes": 347,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/right.mp4",
+          "bytes": 5421059,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/right_timestamps.csv",
+          "bytes": 83731,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/top.mp4",
+          "bytes": 5318379,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/bread/03_more_randomized_episode_000021/top_timestamps.csv",
+          "bytes": 80857,
+          "source_member": "eval_videos/pi05_grab_bread_clean50/episode_000021/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal.mp4",
+          "bytes": 26705716,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_manifest.json",
+          "bytes": 9648,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_preview.png",
+          "bytes": 832933,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_report.md",
+          "bytes": 1406,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/bread/03_more_randomized_episode_000021/bread_03_more_randomized_episode_000021_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "milk",
+      "task_dir": "pi05_put_drinks_basket_clean50",
+      "level": "01_clean",
+      "episode_id": "episode_000008",
+      "case_dir": "01_clean_episode_000008",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/milk/01_clean_episode_000008",
+      "formal_archive_dir": "formal_outputs/milk/01_clean_episode_000008",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/episode_data.npz",
+          "bytes": 317776,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/episode_metadata.json",
+          "bytes": 4353,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/left.mp4",
+          "bytes": 2197892,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/left_timestamps.csv",
+          "bytes": 37625,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/overview.mp4",
+          "bytes": 18781227,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/overview_start.json",
+          "bytes": 354,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/right.mp4",
+          "bytes": 2457248,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/right_timestamps.csv",
+          "bytes": 38286,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/top.mp4",
+          "bytes": 1877569,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/01_clean_episode_000008/top_timestamps.csv",
+          "bytes": 36964,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000008/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal.mp4",
+          "bytes": 13446442,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_manifest.json",
+          "bytes": 9657,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_preview.png",
+          "bytes": 812504,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_report.md",
+          "bytes": 1390,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "milk",
+      "task_dir": "pi05_put_drinks_basket_clean50",
+      "level": "02_randomized",
+      "episode_id": "episode_000010",
+      "case_dir": "02_randomized_episode_000010",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/milk/02_randomized_episode_000010",
+      "formal_archive_dir": "formal_outputs/milk/02_randomized_episode_000010",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/episode_data.npz",
+          "bytes": 382711,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/episode_metadata.json",
+          "bytes": 4354,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/left.mp4",
+          "bytes": 2883635,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/left_timestamps.csv",
+          "bytes": 46118,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/overview.mp4",
+          "bytes": 21095555,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/overview_start.json",
+          "bytes": 354,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/right.mp4",
+          "bytes": 3905959,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/right_timestamps.csv",
+          "bytes": 46928,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/top.mp4",
+          "bytes": 2369972,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/02_randomized_episode_000010/top_timestamps.csv",
+          "bytes": 45308,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000010/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal.mp4",
+          "bytes": 16092407,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_manifest.json",
+          "bytes": 9693,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_preview.png",
+          "bytes": 887387,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_report.md",
+          "bytes": 1400,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/02_randomized_episode_000010/milk_02_randomized_episode_000010_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "milk",
+      "task_dir": "pi05_put_drinks_basket_clean50",
+      "level": "03_more_randomized",
+      "episode_id": "episode_000017",
+      "case_dir": "03_more_randomized_episode_000017",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_third_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/milk/03_more_randomized_episode_000017",
+      "formal_archive_dir": "formal_outputs/milk/03_more_randomized_episode_000017",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/episode_data.npz",
+          "bytes": 718618,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/episode_metadata.json",
+          "bytes": 4361,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/left.mp4",
+          "bytes": 5443619,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/left_timestamps.csv",
+          "bytes": 91401,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/overview.mp4",
+          "bytes": 40428017,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/overview_start.json",
+          "bytes": 355,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/right.mp4",
+          "bytes": 9232439,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/right_timestamps.csv",
+          "bytes": 92968,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/top.mp4",
+          "bytes": 5637520,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/milk/03_more_randomized_episode_000017/top_timestamps.csv",
+          "bytes": 89834,
+          "source_member": "eval_videos/pi05_put_drinks_basket_clean50/episode_000017/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal.mp4",
+          "bytes": 31525934,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_manifest.json",
+          "bytes": 9755,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_preview.png",
+          "bytes": 845935,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_report.md",
+          "bytes": 1418,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/03_more_randomized_episode_000017/milk_03_more_randomized_episode_000017_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "duck",
+      "task_dir": "pi05_put_the_duck_in_the_drawer_clean50",
+      "level": "01_clean",
+      "episode_id": "episode_000015",
+      "case_dir": "01_clean_episode_000015",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_third_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/duck/01_clean_episode_000015",
+      "formal_archive_dir": "formal_outputs/duck/01_clean_episode_000015",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/episode_data.npz",
+          "bytes": 392904,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/episode_metadata.json",
+          "bytes": 4385,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/left.mp4",
+          "bytes": 2716825,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/left_timestamps.csv",
+          "bytes": 48170,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/overview.mp4",
+          "bytes": 21701882,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/overview_start.json",
+          "bytes": 363,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/right.mp4",
+          "bytes": 3328211,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/right_timestamps.csv",
+          "bytes": 49016,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/top.mp4",
+          "bytes": 2816407,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/01_clean_episode_000015/top_timestamps.csv",
+          "bytes": 47324,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000015/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal.mp4",
+          "bytes": 16072291,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_manifest.json",
+          "bytes": 9752,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_preview.png",
+          "bytes": 817672,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_report.md",
+          "bytes": 1408,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/01_clean_episode_000015/duck_01_clean_episode_000015_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "duck",
+      "task_dir": "pi05_put_the_duck_in_the_drawer_clean50",
+      "level": "02_randomized",
+      "episode_id": "episode_000007",
+      "case_dir": "02_randomized_episode_000007",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_20260510.zip",
+      "raw_archive_dir": "raw_rollouts/duck/02_randomized_episode_000007",
+      "formal_archive_dir": "formal_outputs/duck/02_randomized_episode_000007",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/episode_data.npz",
+          "bytes": 389932,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/episode_metadata.json",
+          "bytes": 4388,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/left.mp4",
+          "bytes": 2790031,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/left_timestamps.csv",
+          "bytes": 47856,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/overview.mp4",
+          "bytes": 24078764,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/overview_start.json",
+          "bytes": 364,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/right.mp4",
+          "bytes": 4084597,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/right_timestamps.csv",
+          "bytes": 48682,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/top.mp4",
+          "bytes": 3061902,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/02_randomized_episode_000007/top_timestamps.csv",
+          "bytes": 47030,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000007/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal.mp4",
+          "bytes": 17887110,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_manifest.json",
+          "bytes": 9791,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_preview.png",
+          "bytes": 863104,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_report.md",
+          "bytes": 1418,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/02_randomized_episode_000007/duck_02_randomized_episode_000007_formal_report.md"
+        }
+      ]
+    },
+    {
+      "alias": "duck",
+      "task_dir": "pi05_put_the_duck_in_the_drawer_clean50",
+      "level": "03_more_randomized",
+      "episode_id": "episode_000013",
+      "case_dir": "03_more_randomized_episode_000013",
+      "source_zip": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+      "raw_archive_dir": "raw_rollouts/duck/03_more_randomized_episode_000013",
+      "formal_archive_dir": "formal_outputs/duck/03_more_randomized_episode_000013",
+      "raw_file_count": 11,
+      "formal_file_count": 4,
+      "raw_files": [
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/episode_data.npz",
+          "bytes": 373693,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/episode_data.npz"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/episode_metadata.json",
+          "bytes": 4392,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/episode_metadata.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/left.mp4",
+          "bytes": 3128265,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/left.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/left_timestamps.csv",
+          "bytes": 66982,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/left_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/overview.mp4",
+          "bytes": 25684841,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/overview.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/overview_ffmpeg.log",
+          "bytes": 96,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/overview_ffmpeg.log"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/overview_start.json",
+          "bytes": 363,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/overview_start.json"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/right.mp4",
+          "bytes": 5037741,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/right.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/right_timestamps.csv",
+          "bytes": 68155,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/right_timestamps.csv"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/top.mp4",
+          "bytes": 4325248,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/top.mp4"
+        },
+        {
+          "archive_path": "raw_rollouts/duck/03_more_randomized_episode_000013/top_timestamps.csv",
+          "bytes": 65809,
+          "source_member": "eval_videos/pi05_put_the_duck_in_the_drawer_clean50/episode_000013/top_timestamps.csv"
+        }
+      ],
+      "formal_files": [
+        {
+          "archive_path": "formal_outputs/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal.mp4",
+          "bytes": 16370244,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal.mp4"
+        },
+        {
+          "archive_path": "formal_outputs/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_manifest.json",
+          "bytes": 9862,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_manifest.json"
+        },
+        {
+          "archive_path": "formal_outputs/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_preview.png",
+          "bytes": 932157,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_preview.png"
+        },
+        {
+          "archive_path": "formal_outputs/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_report.md",
+          "bytes": 1329,
+          "source_path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/duck/03_more_randomized_episode_000013/duck_03_more_randomized_episode_000013_formal_report.md"
+        }
+      ]
+    }
+  ]
+}

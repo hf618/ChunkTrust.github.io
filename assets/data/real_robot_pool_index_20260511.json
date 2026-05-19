@@ -1,0 +1,833 @@
+{
+  "generated_at": "2026-05-11T22:32:39",
+  "source_zips": {
+    "second_wave_20260511": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_second_wave_20260511.zip",
+    "third_wave_20260511": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_third_wave_20260511.zip",
+    "fourth_wave_20260511": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_rollouts/eval_videos_fourth_wave_20260511.zip"
+  },
+  "pool_root": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool",
+  "render_recipe": {
+    "script": "policy/pi0/scripts/make_demo1_pool_fast_previews.py",
+    "frame_stride": 6,
+    "fps": 10,
+    "scale": 0.6,
+    "beta_view": "summary",
+    "posterior_summary": "mean±std",
+    "incremental_case_ids_supported": true
+  },
+  "tasks": [
+    {
+      "task": "pi05_fold_towels_clean50",
+      "task_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50",
+      "episode_count": 10,
+      "rendered_ok": 9,
+      "not_ok": 1,
+      "preview_index": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/pool_index.md",
+      "run_manifest": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/run_manifest.json",
+      "beta_view": "summary",
+      "posterior_summary": "mean±std",
+      "episodes": [
+        {
+          "episode": "episode_000000",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 380,
+          "num_replans": 18,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000000_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000000_fast.png"
+        },
+        {
+          "episode": "episode_000001",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 391,
+          "num_replans": 17,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000001_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000001_fast.png"
+        },
+        {
+          "episode": "episode_000002",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": false,
+          "status": null,
+          "num_steps": null,
+          "num_replans": null,
+          "missing_files": [
+            "overview.mp4"
+          ],
+          "video": null,
+          "preview": null
+        },
+        {
+          "episode": "episode_000003",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 415,
+          "num_replans": 20,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000003_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000003_fast.png"
+        },
+        {
+          "episode": "episode_000004",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 787,
+          "num_replans": 31,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000004_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000004_fast.png"
+        },
+        {
+          "episode": "episode_000005",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 786,
+          "num_replans": 32,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000005_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000005_fast.png"
+        },
+        {
+          "episode": "episode_000006",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 802,
+          "num_replans": 34,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000006_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000006_fast.png"
+        },
+        {
+          "episode": "episode_000007",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 814,
+          "num_replans": 35,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000007_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000007_fast.png"
+        },
+        {
+          "episode": "episode_000008",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 766,
+          "num_replans": 34,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000008_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000008_fast.png"
+        },
+        {
+          "episode": "episode_000009",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 848,
+          "num_replans": 38,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000009_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_fold_towels_clean50/_fast_previews/previews/episode_000009_fast.png"
+        }
+      ],
+      "second_wave_20260511_total": 7,
+      "second_wave_20260511_rendered_ok": 7,
+      "third_wave_20260511_total": 0,
+      "third_wave_20260511_rendered_ok": 0,
+      "fourth_wave_20260511_total": 0,
+      "fourth_wave_20260511_rendered_ok": 0
+    },
+    {
+      "task": "pi05_grab_bread_clean50",
+      "task_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50",
+      "episode_count": 20,
+      "rendered_ok": 20,
+      "not_ok": 0,
+      "preview_index": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/pool_index.md",
+      "run_manifest": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/run_manifest.json",
+      "beta_view": "summary",
+      "posterior_summary": "mean±std",
+      "episodes": [
+        {
+          "episode": "episode_000000",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 837,
+          "num_replans": 29,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000000_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000000_fast.png"
+        },
+        {
+          "episode": "episode_000001",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 813,
+          "num_replans": 30,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000001_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000001_fast.png"
+        },
+        {
+          "episode": "episode_000002",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 926,
+          "num_replans": 34,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000002_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000002_fast.png"
+        },
+        {
+          "episode": "episode_000003",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 945,
+          "num_replans": 38,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000003_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000003_fast.png"
+        },
+        {
+          "episode": "episode_000004",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 2010,
+          "num_replans": 76,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000004_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000004_fast.png"
+        },
+        {
+          "episode": "episode_000007",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 2139,
+          "num_replans": 78,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000007_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000007_fast.png"
+        },
+        {
+          "episode": "episode_000008",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1148,
+          "num_replans": 47,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000008_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000008_fast.png"
+        },
+        {
+          "episode": "episode_000009",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1037,
+          "num_replans": 41,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000009_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000009_fast.png"
+        },
+        {
+          "episode": "episode_000010",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1084,
+          "num_replans": 44,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000010_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000010_fast.png"
+        },
+        {
+          "episode": "episode_000011",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 538,
+          "num_replans": 20,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000011_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000011_fast.png"
+        },
+        {
+          "episode": "episode_000012",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1079,
+          "num_replans": 44,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000012_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000012_fast.png"
+        },
+        {
+          "episode": "episode_000013",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1140,
+          "num_replans": 48,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000013_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000013_fast.png"
+        },
+        {
+          "episode": "episode_000014",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1147,
+          "num_replans": 51,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000014_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000014_fast.png"
+        },
+        {
+          "episode": "episode_000015",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1154,
+          "num_replans": 42,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000015_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000015_fast.png"
+        },
+        {
+          "episode": "episode_000016",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1016,
+          "num_replans": 40,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000016_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000016_fast.png"
+        },
+        {
+          "episode": "episode_000017",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 845,
+          "num_replans": 31,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000017_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000017_fast.png"
+        },
+        {
+          "episode": "episode_000018",
+          "wave": "third_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1189,
+          "num_replans": 49,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000018_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000018_fast.png"
+        },
+        {
+          "episode": "episode_000019",
+          "wave": "fourth_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 646,
+          "num_replans": 25,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000019_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000019_fast.png"
+        },
+        {
+          "episode": "episode_000020",
+          "wave": "fourth_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1358,
+          "num_replans": 55,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000020_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000020_fast.png"
+        },
+        {
+          "episode": "episode_000021",
+          "wave": "fourth_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1260,
+          "num_replans": 51,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000021_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_grab_bread_clean50/_fast_previews/previews/episode_000021_fast.png"
+        }
+      ],
+      "second_wave_20260511_total": 7,
+      "second_wave_20260511_rendered_ok": 7,
+      "third_wave_20260511_total": 1,
+      "third_wave_20260511_rendered_ok": 1,
+      "fourth_wave_20260511_total": 3,
+      "fourth_wave_20260511_rendered_ok": 3
+    },
+    {
+      "task": "pi05_put_drinks_basket_clean50",
+      "task_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50",
+      "episode_count": 19,
+      "rendered_ok": 18,
+      "not_ok": 1,
+      "preview_index": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/pool_index.md",
+      "run_manifest": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/run_manifest.json",
+      "beta_view": "summary",
+      "posterior_summary": "mean±std",
+      "episodes": [
+        {
+          "episode": "episode_000000",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 569,
+          "num_replans": 19,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000000_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000000_fast.png"
+        },
+        {
+          "episode": "episode_000001",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1365,
+          "num_replans": 53,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000001_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000001_fast.png"
+        },
+        {
+          "episode": "episode_000002",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 958,
+          "num_replans": 39,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000002_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000002_fast.png"
+        },
+        {
+          "episode": "episode_000003",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 794,
+          "num_replans": 35,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000003_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000003_fast.png"
+        },
+        {
+          "episode": "episode_000004",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": false,
+          "status": "not_rendered",
+          "num_steps": null,
+          "num_replans": null,
+          "missing_files": [
+            "episode_data.npz"
+          ],
+          "video": null,
+          "preview": null
+        },
+        {
+          "episode": "episode_000005",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1427,
+          "num_replans": 58,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000005_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000005_fast.png"
+        },
+        {
+          "episode": "episode_000006",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1098,
+          "num_replans": 46,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000006_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000006_fast.png"
+        },
+        {
+          "episode": "episode_000007",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1043,
+          "num_replans": 45,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000007_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000007_fast.png"
+        },
+        {
+          "episode": "episode_000008",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 586,
+          "num_replans": 21,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000008_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000008_fast.png"
+        },
+        {
+          "episode": "episode_000009",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 784,
+          "num_replans": 29,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000009_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000009_fast.png"
+        },
+        {
+          "episode": "episode_000010",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 713,
+          "num_replans": 27,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000010_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000010_fast.png"
+        },
+        {
+          "episode": "episode_000011",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1100,
+          "num_replans": 42,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000011_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000011_fast.png"
+        },
+        {
+          "episode": "episode_000012",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1036,
+          "num_replans": 45,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000012_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000012_fast.png"
+        },
+        {
+          "episode": "episode_000013",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1183,
+          "num_replans": 48,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000013_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000013_fast.png"
+        },
+        {
+          "episode": "episode_000014",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1289,
+          "num_replans": 54,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000014_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000014_fast.png"
+        },
+        {
+          "episode": "episode_000015",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 71,
+          "num_replans": 3,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000015_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000015_fast.png"
+        },
+        {
+          "episode": "episode_000016",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1176,
+          "num_replans": 45,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000016_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000016_fast.png"
+        },
+        {
+          "episode": "episode_000017",
+          "wave": "third_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1368,
+          "num_replans": 57,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000017_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000017_fast.png"
+        },
+        {
+          "episode": "episode_000018",
+          "wave": "third_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1090,
+          "num_replans": 46,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000018_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/_fast_previews/previews/episode_000018_fast.png"
+        }
+      ],
+      "second_wave_20260511_total": 12,
+      "second_wave_20260511_rendered_ok": 12,
+      "third_wave_20260511_total": 2,
+      "third_wave_20260511_rendered_ok": 2,
+      "fourth_wave_20260511_total": 0,
+      "fourth_wave_20260511_rendered_ok": 0
+    },
+    {
+      "task": "pi05_put_the_duck_in_the_drawer_clean50",
+      "task_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50",
+      "episode_count": 16,
+      "rendered_ok": 13,
+      "not_ok": 3,
+      "preview_index": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/pool_index.md",
+      "run_manifest": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/run_manifest.json",
+      "beta_view": "summary",
+      "posterior_summary": "mean±std",
+      "episodes": [
+        {
+          "episode": "episode_000000",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 876,
+          "num_replans": 34,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000000_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000000_fast.png"
+        },
+        {
+          "episode": "episode_000001",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 764,
+          "num_replans": 29,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000001_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000001_fast.png"
+        },
+        {
+          "episode": "episode_000002",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 731,
+          "num_replans": 33,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000002_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000002_fast.png"
+        },
+        {
+          "episode": "episode_000003",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 1708,
+          "num_replans": 73,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000003_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000003_fast.png"
+        },
+        {
+          "episode": "episode_000004",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": false,
+          "status": "not_rendered",
+          "num_steps": null,
+          "num_replans": null,
+          "missing_files": [
+            "episode_data.npz"
+          ],
+          "video": null,
+          "preview": null
+        },
+        {
+          "episode": "episode_000005",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 682,
+          "num_replans": 28,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000005_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000005_fast.png"
+        },
+        {
+          "episode": "episode_000006",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 829,
+          "num_replans": 32,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000006_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000006_fast.png"
+        },
+        {
+          "episode": "episode_000007",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 726,
+          "num_replans": 29,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000007_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000007_fast.png"
+        },
+        {
+          "episode": "episode_000008",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": false,
+          "status": "not_rendered",
+          "num_steps": null,
+          "num_replans": null,
+          "missing_files": [
+            "episode_data.npz"
+          ],
+          "video": null,
+          "preview": null
+        },
+        {
+          "episode": "episode_000009",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 567,
+          "num_replans": 23,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000009_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000009_fast.png"
+        },
+        {
+          "episode": "episode_000010",
+          "wave": "first_wave_20260510_or_existing",
+          "ok": false,
+          "status": "not_rendered",
+          "num_steps": null,
+          "num_replans": null,
+          "missing_files": [
+            "episode_data.npz"
+          ],
+          "video": null,
+          "preview": null
+        },
+        {
+          "episode": "episode_000011",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 584,
+          "num_replans": 27,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000011_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000011_fast.png"
+        },
+        {
+          "episode": "episode_000012",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 646,
+          "num_replans": 32,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000012_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000012_fast.png"
+        },
+        {
+          "episode": "episode_000013",
+          "wave": "second_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 667,
+          "num_replans": 28,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000013_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000013_fast.png"
+        },
+        {
+          "episode": "episode_000014",
+          "wave": "third_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 680,
+          "num_replans": 28,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000014_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000014_fast.png"
+        },
+        {
+          "episode": "episode_000015",
+          "wave": "third_wave_20260511",
+          "ok": true,
+          "status": "interrupted",
+          "num_steps": 722,
+          "num_replans": 36,
+          "missing_files": [],
+          "video": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000015_fast.mp4",
+          "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_the_duck_in_the_drawer_clean50/_fast_previews/previews/episode_000015_fast.png"
+        }
+      ],
+      "second_wave_20260511_total": 3,
+      "second_wave_20260511_rendered_ok": 3,
+      "third_wave_20260511_total": 2,
+      "third_wave_20260511_rendered_ok": 2,
+      "fourth_wave_20260511_total": 0,
+      "fourth_wave_20260511_rendered_ok": 0
+    }
+  ],
+  "totals": {
+    "tasks": 4,
+    "episodes": 65,
+    "rendered_ok": 60,
+    "not_ok": 5,
+    "second_wave_20260511_total": 29,
+    "second_wave_20260511_rendered_ok": 29,
+    "third_wave_20260511_total": 5,
+    "third_wave_20260511_rendered_ok": 5,
+    "fourth_wave_20260511_total": 3,
+    "fourth_wave_20260511_rendered_ok": 3
+  }
+}

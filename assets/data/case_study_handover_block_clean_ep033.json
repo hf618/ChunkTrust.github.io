@@ -1,0 +1,57 @@
+{
+  "caseName": "handover_block_clean_ep033",
+  "taskText": "use the left arm to grasp the red block on the table, handover it to the right arm and place it on the blue pad",
+  "episodeSteps": 309,
+  "starts": [0, 41, 69, 111, 124, 140, 174, 197, 216, 261, 298],
+  "kExec": [41, 28, 42, 13, 16, 34, 23, 19, 45, 37, 32],
+  "phases": [
+    {
+      "label": "Phase 1",
+      "startStep": 0,
+      "frameIdx": 0,
+      "kExec": 41,
+      "caption": "The policy prepares to grasp the red block with the left arm",
+      "image": "assets/figures/case_study/phase_01.jpg"
+    },
+    {
+      "label": "Phase 2",
+      "startStep": 69,
+      "frameIdx": 69,
+      "kExec": 42,
+      "caption": "The policy moves the block toward the handover pose",
+      "image": "assets/figures/case_study/phase_02.jpg"
+    },
+    {
+      "label": "Phase 3",
+      "startStep": 111,
+      "frameIdx": 111,
+      "kExec": 13,
+      "caption": "The policy stabilizes the block before handover",
+      "image": "assets/figures/case_study/phase_03.jpg"
+    },
+    {
+      "label": "Phase 4",
+      "startStep": 197,
+      "frameIdx": 197,
+      "kExec": 19,
+      "caption": "The policy regrasps the block with the right arm",
+      "image": "assets/figures/case_study/phase_04.jpg"
+    },
+    {
+      "label": "Phase 5",
+      "startStep": 216,
+      "frameIdx": 216,
+      "kExec": 45,
+      "caption": "The policy carries the block toward the target pad",
+      "image": "assets/figures/case_study/phase_05.jpg"
+    },
+    {
+      "label": "Phase 6",
+      "startStep": 298,
+      "frameIdx": 298,
+      "kExec": 32,
+      "caption": "The policy aligns the block for placement on the blue pad",
+      "image": "assets/figures/case_study/phase_06.jpg"
+    }
+  ]
+}

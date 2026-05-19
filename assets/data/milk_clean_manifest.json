@@ -1,0 +1,321 @@
+{
+  "source_zip": null,
+  "source_episode_input": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008",
+  "output_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008",
+  "source_episode_dir": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008",
+  "metadata": {
+    "status": "interrupted",
+    "rollout_kind": "ahs",
+    "task_name": "pi05_put_drinks_basket_clean50",
+    "task_dir": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50",
+    "episode_idx_requested": -1,
+    "episode_idx": 8,
+    "episode_dir": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008",
+    "start_time_ns": 1778478710940250978,
+    "start_monotonic_ns": 832293857002,
+    "end_time_ns": 1778478732988123601,
+    "end_monotonic_ns": 854341729226,
+    "record_fps": 30.0,
+    "record_max_queue": 90,
+    "overview": {
+      "device": "/dev/video0",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "input_format": "mjpeg",
+      "codec": "libx264",
+      "preset": "ultrafast",
+      "video": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview.mp4",
+      "ffmpeg_cmd": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "warning",
+        "-y",
+        "-f",
+        "v4l2",
+        "-input_format",
+        "mjpeg",
+        "-framerate",
+        "30.0",
+        "-video_size",
+        "1920x1080",
+        "-i",
+        "/dev/video0",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "ultrafast",
+        "-tune",
+        "zerolatency",
+        "-pix_fmt",
+        "yuv420p",
+        "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview.mp4"
+      ],
+      "ffmpeg_returncode": 255
+    },
+    "videos": {
+      "top": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/top.mp4",
+      "right": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/right.mp4",
+      "left": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/left.mp4"
+    },
+    "stats": {
+      "sampled_frames": {
+        "top": 661,
+        "right": 661,
+        "left": 661
+      },
+      "written_frames": {
+        "top": 661,
+        "right": 661,
+        "left": 661
+      },
+      "queue_full_drops": {
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "missing_frame_skips": {
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "lock_busy_skips": 0
+    },
+    "rollout_args": {
+      "host": "127.0.0.1",
+      "port": 8001,
+      "prompt": "Move the milk from the left side of the table to the right side of the table using both arms.",
+      "state_format": "raw26",
+      "rollout_mode": "chunk",
+      "chunk_prefix_steps": 50,
+      "episode_max_action_steps": 5000,
+      "hz": 30.0,
+      "policy_alpha": 1.0,
+      "action_ema": 0.5,
+      "max_joint_delta_rad": 0.15,
+      "max_gripper_delta": 0.09,
+      "allow_dual_arm": true,
+      "allow_gripper": true,
+      "single_arm_only": null,
+      "post_check_sec": 0.1,
+      "ctrl_c_soft_reset": 1,
+      "soft_reset_repeat": 2,
+      "soft_reset_sleep_sec": 0.05,
+      "progress_style": null,
+      "motion_watchdog": 0,
+      "motion_watchdog_steps": 20,
+      "motion_command_threshold_rad": 0.01,
+      "motion_observed_threshold_rad": 0.001,
+      "ahs_candidates": "10:50:10",
+      "ahs_exec_mode": "expected_round",
+      "ahs_expected_temp": 0.25,
+      "ahs_ts_epsilon": 0.0,
+      "ahs_ts_seed": 0,
+      "ahs_ts_update_mode": "kernel_forget",
+      "ahs_ts_kernel_bandwidth": 5.0,
+      "ahs_ts_forget_rho": 0.9,
+      "ahs_ts_update_eta": 2.0,
+      "ahs_prior_gamma": 1.0,
+      "ahs_metadata_policy": "require",
+      "horizon_intra_cut_t": 0.25,
+      "horizon_intra_z_mode": "window_rms",
+      "horizon_intra_tau_window": 3,
+      "horizon_intra_alpha": 4.0,
+      "horizon_inter_use_speed_uniformity": 1,
+      "horizon_mix_mode": "both",
+      "horizon_inter_window": 60,
+      "horizon_inter_weight": 0.5,
+      "horizon_inter_beta": 4.0,
+      "horizon_inter_fallback": "ehh_only",
+      "record_video": 1,
+      "record_root": "/home/agilex/RoboDriver/records/eval_videos",
+      "record_task_name": "",
+      "record_checkpoint_dir": "/home/agilex/Fanding/checkpoints/pi05_base_aloha_agilex_real_full/pi05_put_drinks_basket_clean50/40000",
+      "record_episode_idx": -1,
+      "record_overwrite": 0,
+      "record_fps": 30.0,
+      "record_max_queue": 90,
+      "record_overview_device": "auto",
+      "record_overview_width": 1920,
+      "record_overview_height": 1080,
+      "record_overview_fps": 30.0,
+      "record_overview_input_format": "mjpeg",
+      "record_overview_codec": "libx264",
+      "record_overview_preset": "ultrafast",
+      "execute": 1
+    }
+  },
+  "overview_start": {
+    "device": "/dev/video0",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "input_format": "mjpeg",
+    "codec": "libx264",
+    "preset": "ultrafast",
+    "start_time_ns": 1778478710940250978,
+    "start_monotonic_ns": 832293857002,
+    "video_path": "/home/agilex/RoboDriver/records/eval_videos/pi05_put_drinks_basket_clean50/episode_000008/overview.mp4"
+  },
+  "validation": {
+    "num_steps": 586,
+    "num_replans": 21,
+    "checks": {
+      "env_equals_replan_env": true,
+      "selected_equals_k_exec": true,
+      "range_start_equals_env": true,
+      "range_len_equals_selected_k": true,
+      "replan_idx_is_sequence": true,
+      "monotonic_timestamp_int64": true,
+      "top_frame_index_in_bounds": true,
+      "right_frame_index_in_bounds": true,
+      "left_frame_index_in_bounds": true,
+      "overview_frame_index_in_bounds": true,
+      "beta_shape_matches_replans": true
+    },
+    "video_info": {
+      "top": {
+        "path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008/top.mp4",
+        "frame_count": 661,
+        "fps": 30.0,
+        "width": 640,
+        "height": 480
+      },
+      "right": {
+        "path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008/right.mp4",
+        "frame_count": 661,
+        "fps": 30.0,
+        "width": 640,
+        "height": 480
+      },
+      "left": {
+        "path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008/left.mp4",
+        "frame_count": 661,
+        "fps": 30.0,
+        "width": 640,
+        "height": 480
+      },
+      "overview": {
+        "path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_pool/pi05_put_drinks_basket_clean50/episode_000008/overview.mp4",
+        "frame_count": 658,
+        "fps": 30.0,
+        "width": 1920,
+        "height": 1088
+      }
+    },
+    "frame_bounds": {
+      "top": {
+        "step_min": 4,
+        "step_max": 659,
+        "replan_min": 4,
+        "replan_max": 655,
+        "frame_count": 661,
+        "in_bounds": true
+      },
+      "right": {
+        "step_min": 4,
+        "step_max": 659,
+        "replan_min": 4,
+        "replan_max": 655,
+        "frame_count": 661,
+        "in_bounds": true
+      },
+      "left": {
+        "step_min": 4,
+        "step_max": 659,
+        "replan_min": 4,
+        "replan_max": 655,
+        "frame_count": 661,
+        "in_bounds": true
+      },
+      "overview": {
+        "step_min": 5,
+        "step_max": 657,
+        "replan_min": 5,
+        "replan_max": 656,
+        "frame_count": 658,
+        "in_bounds": true
+      }
+    },
+    "last_range_end": 594,
+    "clipped_last_chunk": true
+  },
+  "outputs": {
+    "video": {
+      "path": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal.mp4",
+      "frame_count": 586,
+      "fps": 30.0,
+      "width": 1592,
+      "height": 720,
+      "layout": "compact_overlay",
+      "beta_view": "summary",
+      "layout_info": {
+        "canvas_size": [
+          1592,
+          720
+        ],
+        "overview_tile": [
+          0,
+          0,
+          1271,
+          720
+        ],
+        "camera_tile_size": [
+          320,
+          240
+        ],
+        "overlay_bbox": [
+          75,
+          18,
+          1120,
+          224
+        ],
+        "speed_badge_bbox": [
+          28,
+          646,
+          162,
+          48
+        ]
+      }
+    },
+    "preview": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_preview.png",
+    "report": "/home/hfd24/Fanding/Reflex/RoboTwin/eval_panel/pi05/Agilex_demo1_selected/milk/01_clean_episode_000008/milk_01_clean_episode_000008_formal_report.md"
+  },
+  "rendering": {
+    "fps": 30.0,
+    "layout": "compact_overlay",
+    "beta_view": "summary",
+    "layout_info": {
+      "canvas_size": [
+        1592,
+        720
+      ],
+      "overview_tile": [
+        0,
+        0,
+        1271,
+        720
+      ],
+      "camera_tile_size": [
+        320,
+        240
+      ],
+      "overlay_bbox": [
+        75,
+        18,
+        1120,
+        224
+      ],
+      "speed_badge_bbox": [
+        28,
+        646,
+        162,
+        48
+      ]
+    },
+    "beta_source": "posterior mean±std from ahs_beta_ab_before",
+    "posterior_summary": "mean±std"
+  }
+}

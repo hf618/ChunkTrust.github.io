@@ -1,0 +1,7 @@
+assets/videos/real/
+templates/
+
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
