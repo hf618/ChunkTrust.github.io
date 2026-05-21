@@ -155,7 +155,7 @@ td {
   width: min(1180px, calc(100% - 3rem));
   min-height: 100svh;
   margin: 0 auto;
-  padding: calc(var(--header-height) + 5rem) 0 8rem;
+  padding: calc(var(--header-height) + 5rem) 0 8.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,6 +242,12 @@ h3 {
   right: 0;
   bottom: 2.15rem;
   left: 0;
+}
+
+.hero-actions .button {
+  min-height: 40px;
+  padding: 0.58rem 0.82rem;
+  font-size: 0.88rem;
 }
 
 .button {
@@ -1231,11 +1237,18 @@ video::backdrop {
   .hero-content {
     width: min(100% - 2rem, 1180px);
     min-height: 100svh;
-    padding: calc(var(--header-height) + 3rem) 0 6.5rem;
+    padding: calc(var(--header-height) + 3rem) 0 12rem;
   }
 
   .hero-actions {
     bottom: 1.35rem;
+    gap: 0.45rem;
+  }
+
+  .hero-actions .button {
+    min-height: 34px;
+    padding: 0.42rem 0.58rem;
+    font-size: 0.76rem;
   }
 
   .hero-text {
