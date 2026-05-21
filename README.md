@@ -2,7 +2,7 @@
 
 Static project page for:
 
-**How Far Can Robots Trust Action Chunks? Horizon Adaptation via Action-Expert Evidence**
+**ChunkTrust**
 
 ## Layout
 
@@ -12,7 +12,6 @@ Static project page for:
 - `assets/figures/` - converted paper figures for web display.
 - `assets/videos/real_h264/` - browser-compatible H.264 rollout videos used by the page.
 - `assets/thumbs/real/` - video poster frames.
-- `assets/paper/chunktrust_neurips2026.pdf` - local paper PDF.
 - `.nojekyll` - disables Jekyll processing on GitHub Pages so static assets are served directly.
 
 ## Local Preview
