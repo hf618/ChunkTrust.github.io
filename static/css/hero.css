@@ -1,5 +1,8 @@
-/* Full-width, natural-ratio media meets the overview without a bottom spacer. */
+/* Trim only the upper wall; preserve the scene's scale and lower action area. */
 .hero {
+  --hero-top-crop:0px;
+  --hero-frame-height:56.25vw;
+  --hero-text-anchor:25.875vw;
   display:block;
   min-height:0;
   height:auto;
@@ -11,9 +14,16 @@
   position:relative;
   display:block;
   width:100%;
-  aspect-ratio:16/9;
+  height:calc(var(--hero-frame-height) - var(--hero-top-crop));
+  overflow:hidden;
   margin:0;
   padding:0;
+}
+.hero-stage {
+  position:relative;
+  top:calc(-1 * var(--hero-top-crop));
+  width:100%;
+  aspect-ratio:16/9;
 }
 .hero-media .hero-video,
 .hero-media .hero-shade,
@@ -27,14 +37,14 @@
 }
 .hero-media .hero-video { display:block; object-fit:cover; object-position:center; }
 .hero-media .hero-shade {
-  background:radial-gradient(ellipse 34% 43% at 53.5% 46%,rgba(8,22,17,.72) 0%,rgba(8,22,17,.45) 68%,transparent 100%),linear-gradient(180deg,rgba(8,12,15,.25),transparent 50%);
+  background:radial-gradient(ellipse 34% 43% at 50% 46%,rgba(8,22,17,.72) 0%,rgba(8,22,17,.45) 68%,transparent 100%),linear-gradient(180deg,rgba(8,12,15,.25),transparent 50%);
 }
 #horizon-hud { z-index:1; pointer-events:none; overflow:visible; }
 .hero-content {
   position:absolute;
-  top:calc(var(--header-height) + 25.875vw);
-  left:27%;
-  width:53%;
+  top:calc(var(--header-height) + var(--hero-text-anchor) - var(--hero-top-crop));
+  left:24%;
+  width:52%;
   max-width:none;
   min-height:0;
   margin:0;
@@ -42,9 +52,9 @@
   transform:translateY(-50%);
 }
 .hero-text { width:100%; max-width:none; margin-inline:auto; text-align:center; text-shadow:0 1px 8px rgba(0,0,0,.55); }
-.hero h1 { display:flex; align-items:center; justify-content:center; gap:1.1rem; margin-bottom:.8rem; }
+.hero h1 { display:flex; align-items:center; justify-content:center; gap:1.1rem; width:fit-content; max-width:100%; margin:0 auto .8rem; }
 .hero-wordmark { flex:0 0 auto; margin:0; font-size:clamp(2.65rem,4.1vw,4.7rem); line-height:1.12; }
-.hero-subtitle { max-width:630px; font-size:clamp(1rem,1.35vw,1.5rem); line-height:1.35; text-wrap:balance; text-align:left; }
+.hero-subtitle { max-width:630px; font-size:clamp(1rem,1.35vw,1.5rem); line-height:1.35; text-wrap:balance; text-align:center; }
 .hero .desktop-break { display:none; }
 .hero-copy { max-width:none; margin-bottom:1.1rem; font-size:clamp(.78rem,.95vw,1rem); text-align:center; }
 .hero-actions { justify-content:center; gap:.65rem; }
