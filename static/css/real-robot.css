@@ -1,0 +1,118 @@
+/* One continuous video clock drives the overview, three cameras, and logged HUD. */
+#real-player { border:1px solid #d5dfd2; border-radius:14px; overflow:hidden; background:#f3f7ef; color:#18382f; margin-bottom:22px; }
+.rr-task-copy { position:absolute; left:27%; top:6.5%; width:51%; z-index:1; color:#18382f; text-align:center; }
+.rr-task-copy h3 { margin:.45cqw 0 .65cqw; font-size:2.4cqw; font-weight:650; line-height:1.2; letter-spacing:-.04em; }
+.rr-task-copy p { max-width:44cqw; margin:0 auto; font-size:1.1cqw; line-height:1.6; text-wrap:pretty; color:#314e43; }
+.rr-level { display:inline-block; color:#486954; font-size:.85cqw; font-weight:500; }
+.rr-scene { position:relative; aspect-ratio:16/9; container-type:inline-size; overflow:hidden; }
+.rr-source { position:absolute; width:1px; height:1px; opacity:0; pointer-events:none; }
+.rr-overview,.rr-poster { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.rr-overview { visibility:hidden; }
+.rr-hud { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:1; overflow:visible; }
+.rr-cameras { position:absolute; right:1.5%; top:21.6666667%; width:16.25%; height:67.2222222%; z-index:1; visibility:hidden; }
+.rr-camera-stack { display:flex; flex-direction:column; gap:.625cqw; }
+.rr-camera { position:relative; margin:0; overflow:hidden; border-radius:.5625cqw; outline:.075cqw solid rgba(246,252,243,.88); }
+.rr-camera canvas { display:block; width:100%; aspect-ratio:4/3; height:auto; }
+.rr-camera figcaption { position:absolute; left:.5cqw; bottom:.5cqw; padding:.4375cqw .5625cqw; background:rgba(243,249,241,.88); border:.04375cqw solid rgba(250,255,247,.75); border-radius:.3125cqw; font-size:.6875cqw; line-height:1; font-weight:500; }
+.rr-speed { position:absolute; left:1.5%; top:calc(33.3333333% - .625cqw); transform:translateY(-100%); z-index:1; width:21%; padding:.5cqw .625cqw; border:.04375cqw solid rgba(250,255,247,.75); border-radius:.375cqw; background:rgba(243,249,241,.75); color:#2d6548; font-size:1cqw; font-weight:600; line-height:1.2; text-align:center; }
+.rr-status { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); padding:12px 18px; border-radius:8px; background:rgba(243,249,241,.94); font-size:.85rem; text-align:center; }
+#real-player.is-ready .rr-overview,#real-player.is-ready .rr-cameras { visibility:visible; }
+#real-player.is-ready .rr-poster { visibility:hidden; }
+.rr-controls { display:flex; align-items:center; gap:12px; padding:12px 18px; border-top:1px solid #e2e8dc; }
+.rr-controls button { flex:0 0 auto; background:transparent; border:1px solid #c4d4c0; border-radius:7px; padding:7px 10px; color:#244c3a; font:inherit; font-size:.78rem; cursor:pointer; }
+.rr-controls button:hover { background:#e4eddf; }
+.rr-controls button:disabled { opacity:.45; cursor:default; }
+.rr-controls input { flex:1; min-width:35px; accent-color:#2d6548; cursor:pointer; }
+.rr-controls output { flex:0 0 auto; font-size:.75rem; font-variant-numeric:tabular-nums; color:#587168; }
+.rr-controls button:focus-visible,.rr-clip:focus-visible { outline:3px solid #619594; outline-offset:3px; }
+.rr-gallery-note { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0 0 12px; color:#587168; font-size:.8rem; }
+.rr-gallery-note p { margin:0; }
+.rr-clips { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.rr-clip { display:block; text-align:left; color:#18382f; background:#fafcf6; border:1px solid #dbe3d3; border-radius:10px; padding:0; overflow:hidden; cursor:pointer; font:inherit; transition:border-color .15s,box-shadow .15s; }
+.rr-clip[hidden] { display:none; }
+.rr-clip:hover { border-color:#8ca88d; }
+.rr-clip.is-selected { border-color:#2d6548; box-shadow:0 0 0 2px #2d6548; }
+.rr-thumb { position:relative; display:block; aspect-ratio:16/9; overflow:hidden; }
+.rr-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+.rr-thumb-time { position:absolute; right:8px; bottom:8px; border-radius:4px; padding:2px 5px; color:#fff; background:rgba(17,35,25,.72); font-size:.7rem; font-variant-numeric:tabular-nums; }
+.rr-clip-meta { display:flex; flex-direction:column; gap:3px; padding:10px 12px; }
+.rr-clip-meta strong { font-size:.87rem; font-weight:600; }
+.rr-clip-meta small { font-size:.74rem; color:#587168; }
+.rr-footnote { font-size:.73rem; color:#718071; margin:10px 18px 14px; }
+.rr-footnote a { color:inherit; text-underline-offset:3px; }
+#real-player:fullscreen { border:0; border-radius:0; width:100vw; height:100vh; overflow:auto; background:#edf3e9; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+#real-player:fullscreen .rr-controls { width:100%; }
+#real-player:fullscreen .rr-scene { width:min(100vw,calc((100vh - 100px) * 16 / 9)); flex:0 0 auto; }
+#real-player:fullscreen .rr-footnote { margin:4px 18px; }
+@media(max-width:980px) { .rr-clips { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:640px) {
+  .rr-task-copy { position:static; grid-column:1/-1; grid-row:1; width:auto; padding:14px 6px 6px; text-align:left; }
+  .rr-task-copy h3 { margin:5px 0 7px; font-size:1.3rem; }
+  .rr-task-copy p { max-width:none; font-size:.8rem; line-height:1.55; }
+  .rr-level { font-size:.72rem; }
+  .rr-scene { display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:8px; padding:0 8px 8px; aspect-ratio:auto; }
+  .rr-overview { position:static; grid-column:1/-1; grid-row:2; width:calc(100% + 16px); margin:0 -8px; height:auto; aspect-ratio:16/9; }
+  .rr-poster { position:static; grid-column:1/-1; grid-row:2; width:calc(100% + 16px); margin:0 -8px; height:auto; aspect-ratio:16/9; }
+  .rr-hud { position:static; grid-column:1; grid-row:3; width:100%; height:auto; aspect-ratio:336/500; }
+  .rr-cameras { position:static; grid-column:2; grid-row:3; width:100%; height:auto; align-self:start; }
+  .rr-camera-stack { gap:8px; }
+  .rr-camera { border-radius:5px; }
+  .rr-camera figcaption { font-size:9px; left:4px; bottom:4px; padding:4px 5px; border-radius:3px; }
+  .rr-speed { position:relative; grid-column:1; grid-row:2; align-self:start; justify-self:start; top:10px; left:0; transform:none; width:100%; padding:5px 8px; border-radius:5px; font-size:12px; }
+  .rr-controls { gap:8px; padding:10px; flex-wrap:wrap; }
+  .rr-controls input { order:5; flex-basis:100%; }
+  .rr-controls button { font-size:.7rem; padding:6px 8px; }
+  .rr-controls output { margin-left:auto; font-size:.68rem; }
+  .rr-clips { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .rr-clip-meta { padding:8px; }
+  .rr-clip-meta strong { font-size:.76rem; }
+  .rr-clip-meta small { font-size:.68rem; }
+  .rr-gallery-note { font-size:.72rem; align-items:baseline; }
+  .rr-gallery-note [data-rr-count] { white-space:nowrap; }
+  .rr-footnote { font-size:.68rem; margin:8px 12px 12px; }
+  #real-player:fullscreen { display:block; }
+  #real-player:fullscreen .rr-scene { width:100%; }
+}
+
+/* Shared C HUD tokens from the approved hero. */
+/* C: three light sections for stage, execution history, and horizon selection. */
+.rr-hud .panel {
+  --panel-fill:rgba(247,251,246,.84); --panel-border:rgba(255,255,255,.85);
+  --ink:#18382f; --muted:#587168; --accent:#327457;
+  --grid:rgba(41,78,65,.13); --axis:rgba(41,78,65,.30); --badge:rgba(74,132,94,.10);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  fill:var(--ink);
+}
+.rr-hud .panel .whole-surface { fill:var(--panel-fill); stroke:var(--panel-border); stroke-width:1; filter:url(#rr-panel-shadow); }
+.rr-hud .panel .section-surface { display:none; }
+.rr-hud .panel .section-rule { stroke:var(--axis); stroke-width:.8; }
+.rr-hud .panel[data-style="c"] { --panel-fill:rgba(243,249,241,.75); --panel-border:rgba(250,255,247,.75); --accent:#2d6548; }
+.rr-hud .panel[data-style="c"] .whole-surface,.rr-hud .panel[data-style="c"] .section-rule { display:none; }
+.rr-hud .panel[data-style="c"] .section-surface { display:block; fill:var(--panel-fill); stroke:var(--panel-border); stroke-width:.7; }
+.rr-hud .panel .eyebrow { fill:var(--accent); font-size:10.5px; font-weight:700; letter-spacing:.5px; text-transform:none; }
+.rr-hud .panel .stage-count { fill:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; }
+.rr-hud .panel .stage-caption { font-size:17px; font-weight:600; letter-spacing:-.3px; }
+.rr-hud .panel .section-title { font-size:13px; font-weight:600; }
+.rr-hud .panel .caption,.rr-hud .panel .tick { fill:var(--muted); font-size:10px; }
+.rr-hud .panel .tick { font-variant-numeric:tabular-nums; }
+.rr-hud .panel .k-badge { fill:var(--badge); }
+.rr-hud .panel .k-value { fill:var(--accent); font-size:20px; font-weight:600; font-variant-numeric:tabular-nums; }
+.rr-hud .panel .grid { stroke:var(--grid); stroke-width:.8; }
+.rr-hud .panel .stage-band { fill:#698e70; opacity:.10; }
+.rr-hud .panel .stage-band-alt { fill:#7592a5; opacity:.07; }
+.rr-hud .panel .current-stage-band { fill:var(--accent); opacity:.17; }
+.rr-hud .panel .stage-boundary { stroke:var(--axis); stroke-width:.7; stroke-dasharray:2.5 3; }
+.rr-hud .panel .stage-index { fill:var(--muted); font-size:8px; font-variant-numeric:tabular-nums; }
+.rr-hud .panel .current-stage-index { fill:var(--accent); font-weight:700; }
+.rr-hud .panel .axis { stroke:var(--axis); stroke-width:.8; }
+.rr-hud .panel .horizon-line { fill:none; stroke:var(--accent); stroke-width:2.25; stroke-linejoin:round; }
+.rr-hud .panel .curve-fill { fill:var(--accent); opacity:.055; }
+.rr-hud .panel .cursor { stroke:var(--accent); stroke-width:1; opacity:.6; }
+.rr-hud .panel .cursor-dot { fill:var(--accent); stroke:var(--panel-fill); stroke-width:1.5; }
+.rr-hud .panel .stage-segment { fill:var(--accent); }
+.rr-hud .panel .selection-guide { stroke:var(--accent); stroke-width:1; opacity:.75; }
+.rr-hud .panel .selection-marker { fill:var(--accent); }
+.rr-hud .panel .posterior { stroke-width:2.5; stroke-linecap:round; }
+.rr-hud .panel .posterior-dot { stroke:var(--panel-fill); stroke-width:1.3; }
+.rr-hud .panel[data-style="c"] .stage-caption { font-weight:500; font-size:18px; }
+.rr-hud .panel[data-style="c"] .section-title { font-weight:500; }

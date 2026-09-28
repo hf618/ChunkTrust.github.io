@@ -1,13 +1,3 @@
-const activeFilters = {
-  task: "all",
-  level: "all",
-};
-
-function isCardShown(video) {
-  const card = video.closest(".video-card");
-  return !card || !card.classList.contains("is-hidden");
-}
-
 function tryPlay(video) {
   video.muted = true;
   const playAttempt = video.play();
@@ -17,115 +7,49 @@ function tryPlay(video) {
   }
 }
 
-function loadLazyVideo(video) {
-  if (video.dataset.loaded === "true") {
-    return true;
-  }
+let syncHeroVideo = () => {};
 
-  const source = video.dataset.src;
-  if (!source) {
-    return false;
-  }
+function initHeroVideo() {
+  const video = document.querySelector(".hero-video");
+  const button = document.querySelector(".hero-playback");
+  if (!video || !button) return;
 
-  video.src = source;
-  video.dataset.loaded = "true";
-  video.load();
-  return true;
-}
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let userPaused = reducedMotion.matches;
+  let inViewport = true;
 
-function syncLazyVideo(video) {
-  const shouldPlay = video.dataset.inViewport === "true" && isCardShown(video);
+  const updateButton = () => {
+    button.textContent = video.paused ? "Play video" : "Pause video";
+  };
 
-  if (shouldPlay) {
-    if (loadLazyVideo(video)) {
+  syncHeroVideo = () => {
+    if (inViewport && !document.hidden && !userPaused) {
       tryPlay(video);
-    }
-    return;
-  }
-
-  if (!video.paused) {
-    video.pause();
-  }
-}
-
-function syncLazyVideos() {
-  document.querySelectorAll(".lazy-video").forEach(syncLazyVideo);
-}
-
-function initLazyVideos() {
-  const videos = Array.from(document.querySelectorAll(".lazy-video"));
-
-  videos.forEach((video) => {
-    video.muted = true;
-    video.preload = "none";
-    video.dataset.inViewport = "false";
-  });
-
-  if (!("IntersectionObserver" in window)) {
-    videos.forEach((video) => {
-      video.dataset.inViewport = "true";
-      syncLazyVideo(video);
-    });
-    return;
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const video = entry.target;
-      video.dataset.inViewport = entry.isIntersecting ? "true" : "false";
-      syncLazyVideo(video);
-    });
-  }, { rootMargin: "300px 0px", threshold: [0, 0.15, 0.5] });
-
-  videos.forEach((video) => observer.observe(video));
-}
-
-function updateGallery() {
-  const cards = document.querySelectorAll(".video-card");
-
-  cards.forEach((card) => {
-    const taskMatch = activeFilters.task === "all" || card.dataset.task === activeFilters.task;
-    const levelMatch = activeFilters.level === "all" || card.dataset.level === activeFilters.level;
-    const shouldShow = taskMatch && levelMatch;
-
-    card.classList.toggle("is-hidden", !shouldShow);
-
-    const video = card.querySelector("video");
-    if (!video) {
-      return;
-    }
-
-    if (shouldShow) {
-      syncLazyVideo(video);
-    } else if (!video.paused) {
+    } else {
       video.pause();
     }
+    updateButton();
+  };
+
+  button.hidden = false;
+  button.addEventListener("click", () => {
+    userPaused = !video.paused;
+    syncHeroVideo();
   });
-}
-
-function setActiveButton(button) {
-  const group = button.dataset.filterGroup;
-  const value = button.dataset.filterValue;
-
-  activeFilters[group] = value;
-
-  document
-    .querySelectorAll(`.filter-button[data-filter-group="${group}"]`)
-    .forEach((candidate) => {
-      candidate.classList.toggle("is-active", candidate === button);
-    });
-
-  updateGallery();
-}
-
-function bindGalleryControls() {
-  document.querySelectorAll(".filter-button").forEach((button) => {
-    button.addEventListener("click", () => setActiveButton(button));
+  video.addEventListener("play", updateButton);
+  video.addEventListener("pause", updateButton);
+  document.addEventListener("visibilitychange", syncHeroVideo);
+  reducedMotion.addEventListener("change", () => {
+    userPaused = reducedMotion.matches;
+    syncHeroVideo();
   });
-
-  document.querySelectorAll(".video-card video").forEach((video) => {
-    video.muted = true;
-  });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      inViewport = entry.isIntersecting;
+      syncHeroVideo();
+    }, { threshold: 0 }).observe(video);
+  }
+  syncHeroVideo();
 }
 
 const svgNamespace = "http://www.w3.org/2000/svg";
@@ -499,14 +423,10 @@ function initCaseStudies() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".hero-video").forEach(tryPlay);
-  bindGalleryControls();
-  initLazyVideos();
+  initHeroVideo();
   initCaseStudies();
-  updateGallery();
 });
 
 window.addEventListener("pageshow", () => {
-  document.querySelectorAll(".hero-video").forEach(tryPlay);
-  syncLazyVideos();
+  syncHeroVideo();
 });
