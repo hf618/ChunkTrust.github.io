@@ -10,14 +10,15 @@
     <meta name="author" content="Fanding Huang, Jingyan Jiang, Shifeng Bao, Mingkang Pu, Shiwei Li, Jing Xu, Shijia Xu, Guanbo Huang, Chenghao Gu, Yuzhi Huang, Chenxin Li, Faisal Nadeem Khan, Huan Yang, Yan Wang, Cheng Chi, Zhi Wang">
     <meta property="og:title" content="ChunkTrust: Adapting Execution Horizons for Robot Policies with Action-Expert Evidence">
     <meta property="og:description" content="ChunkTrust uses action-expert evidence to decide how much of each predicted action chunk a robot should execute before observing again.">
-    <meta name="theme-color" content="#04464f">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="assets/favicon.svg?v=20260929-white-mint-v34" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/favicon.svg?v=20260929-white-mint-v34" type="image/svg+xml">
     <link rel="stylesheet" href="static/css/index.css?v=20260929-results-v24">
     <link rel="stylesheet" href="static/css/hero.css?v=20260929-spacing-v29">
     <link rel="stylesheet" href="static/css/hero-cameras.css?v=20260929-autonomous-v28">
     <link rel="stylesheet" href="static/css/teaser.css?v=20260929-method-v23">
     <link rel="stylesheet" href="static/css/real-robot.css?v=20260929-tasks-v28">
+    <link rel="stylesheet" href="static/css/brand.css?v=20260929-white-mint-v34">
   </head>
   <body>
     <header class="site-header" aria-label="Site navigation">
@@ -258,7 +259,7 @@
             <p class="eyebrow">Results</p>
             <h2>Adaptive execution across simulation benchmarks.</h2>
             <p>
-              Success rates (%). Yellow columns show AHS; blue columns show AHS+QHA.
+              Success rates (%). Highlighted columns show AHS and AHS+QHA.
               Gains are absolute differences in success rate, computed before rounding.
             </p>
           </div>
@@ -266,9 +267,8 @@
           <div class="results-grid">
             <article class="result-table full-result ahs-summary-table" id="ahs-benchmarks">
               <h3>Table 1 · AHS performance across simulation benchmarks.</h3>
-              <p class="result-context" id="ahs-benchmarks-note">Each Base–AHS comparison uses the same policy checkpoint. RoboTwin2.0 results average Easy and Hard, with equal weight per task.</p>
               <div class="table-scroll" tabindex="0" role="region" aria-label="AHS benchmark table, scroll to view all columns">
-                <table aria-label="AHS performance across simulation benchmarks" aria-describedby="ahs-benchmarks-note">
+                <table aria-label="AHS performance across simulation benchmarks">
                   <thead>
                     <tr><th scope="col">Policy</th><th scope="col">Task scope</th><th scope="col">Train recipe</th><th scope="col">Base</th><th scope="col" class="ahs-col">+AHS</th><th scope="col">Δ vs. Base</th></tr>
                   </thead>
@@ -292,11 +292,9 @@
 
             <article class="result-table full-result qha-results-table" id="qha-transfer">
               <h3>Table 2 · QHA augmentation and transfer on RoboTwin2.0.</h3>
-              <p class="result-context">Easy and Hard denote clean and randomized settings. Bold marks the best method for each policy and evaluation condition.</p>
               <h4 class="result-panel-title" id="qha-training-title">A. QHA training-task evaluation</h4>
-              <p class="result-context" id="qha-training-note">Each policy family uses one QHA head trained on these eight tasks, with the base policies frozen.</p>
               <div class="table-scroll qha-training-scroll" tabindex="0" role="region" aria-label="QHA training-task table, scroll to view all columns">
-                <table class="qha-training-table" aria-labelledby="qha-training-title" aria-describedby="qha-training-note">
+                <table class="qha-training-table" aria-labelledby="qha-training-title">
                   <thead>
                     <tr><th scope="col" rowspan="3">Task</th><th class="group" colspan="6" scope="colgroup"><span class="policy-label">π<sub>0</sub></span></th><th class="group policy-divider" colspan="6" scope="colgroup"><span class="policy-label">π<sub>0.5</sub></span></th></tr>
                     <tr><th class="group" colspan="2" scope="colgroup">Base</th><th class="group ahs-col" colspan="2" scope="colgroup">AHS</th><th class="group qha-col" colspan="2" scope="colgroup">AHS+QHA</th><th class="group policy-divider" colspan="2" scope="colgroup">Base</th><th class="group ahs-col" colspan="2" scope="colgroup">AHS</th><th class="group qha-col" colspan="2" scope="colgroup">AHS+QHA</th></tr>
@@ -317,9 +315,8 @@
                 </table>
               </div>
               <h4 class="result-panel-title" id="qha-heldout-title">B. QHA transfer to held-out tasks (π<sub>0.5</sub>)</h4>
-              <p class="result-context" id="qha-heldout-note">A separate QHA head is trained on six tasks and evaluated on two held-out tasks, averaging Easy and Hard. Only QHA is task-held-out; the base policies remain task-specific.</p>
               <div class="table-scroll qha-heldout-scroll" tabindex="0" role="region" aria-label="QHA held-out transfer table, scroll to view all columns">
-                <table aria-labelledby="qha-heldout-title" aria-describedby="qha-heldout-note">
+                <table aria-labelledby="qha-heldout-title">
                   <thead><tr><th scope="col">Task</th><th scope="col">Base</th><th scope="col" class="ahs-col">AHS</th><th scope="col" class="qha-col">AHS+QHA</th><th scope="col">Δ vs. AHS</th></tr></thead>
                   <tbody>
                     <tr><td>Blocks Ranking RGB</td><td>28.00</td><td class="ahs-col">38.50</td><td class="qha-col"><strong>43.50</strong></td><td class="gain-pos">+5.00</td></tr>
@@ -594,7 +591,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>ChunkTrust project page. Assets are organized under <code>assets/</code> for static deployment.</p>
+      <a class="footer-brand" href="#top" aria-label="ChunkTrust — back to top">Chunk<span>Trust</span></a>
       <a href="#top">Back to top</a>
     </footer>
 
@@ -605,5 +602,6 @@
     <script src="static/js/rollout-hud.js?v=20260929-v27"></script>
     <script src="static/js/real-robot.js?v=20260929-duck-default-v31"></script>
     <script src="static/js/teaser.js?v=20260929-evidence-v21"></script>
+    <script src="static/js/range-colors.js?v=20260929-white-mint-v34"></script>
   </body>
 </html>
