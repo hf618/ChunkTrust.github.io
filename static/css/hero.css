@@ -52,9 +52,9 @@
   transform:translateY(-50%);
 }
 .hero-text { width:100%; max-width:none; margin-inline:auto; text-align:center; text-shadow:0 1px 8px rgba(0,0,0,.55); }
-.hero h1 { display:flex; align-items:center; justify-content:center; gap:1.1rem; width:fit-content; max-width:100%; margin:0 auto .8rem; }
+.hero h1 { display:flex; align-items:center; justify-content:center; gap:.65rem; width:fit-content; max-width:100%; margin:0 auto .8rem; }
 .hero-wordmark { flex:0 0 auto; margin:0; font-size:clamp(2.65rem,4.1vw,4.7rem); line-height:1.12; }
-.hero-subtitle { max-width:630px; font-size:clamp(1rem,1.35vw,1.5rem); line-height:1.35; text-wrap:balance; text-align:center; }
+.hero-subtitle { max-width:20em; font-size:clamp(1rem,1.35vw,1.5rem); line-height:1.35; text-wrap:balance; text-align:center; }
 .hero .desktop-break { display:none; }
 .hero-copy { max-width:none; margin-bottom:1.1rem; font-size:clamp(.78rem,.95vw,1rem); text-align:center; }
 .hero-actions { justify-content:center; gap:.65rem; }
@@ -89,7 +89,7 @@
 }
 .hero .author-notes { margin:0; color:#e0e9df; font-size:clamp(.66rem,.76vw,.82rem); }
 @media(min-width:981px) and (max-width:1150px) {
-  .hero h1 { gap:.75rem; }
+  .hero h1 { gap:.65rem; }
   .hero-copy { margin-bottom:.8rem; }
   .hero .author-list { gap:.25rem .65rem; }
   .hero .authors-band { margin-bottom:.8rem; }
