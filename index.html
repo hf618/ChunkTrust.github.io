@@ -368,15 +368,15 @@
             </div>
           </div>
 
-          <article id="real-player" aria-label="Interactive real robot rollout" aria-busy="true">
+          <article id="real-player" data-default-clip="duck_more_randomized" aria-label="Interactive real robot rollout" aria-busy="true">
             <div class="rr-scene">
               <video class="rr-source" muted loop playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1"></video>
               <canvas class="rr-overview" width="1600" height="900" aria-label="Overview camera"></canvas>
-              <img class="rr-poster" src="assets/thumbs/real_rollouts/fold_clean.jpg" alt="Fold Towels — Clean, overview camera" loading="lazy">
+              <img class="rr-poster" src="assets/thumbs/real_rollouts/duck_more_randomized.jpg" alt="Duck to Drawer — More Randomized, overview camera" loading="lazy">
               <div class="rr-task-copy">
-                <span class="rr-level" data-rr-level>Clean</span>
-                <h3 data-rr-title>Fold Towels</h3>
-                <p data-rr-description>Fold the towel into a compact shape with both arms, coordinating the grasp, lift, and fold as the towel layout and surrounding objects change.</p>
+                <span class="rr-level" data-rr-level>More Randomized</span>
+                <h3 data-rr-title>Duck to Drawer</h3>
+                <p data-rr-description>Open the drawer, pick up the duck, place it inside, and close the drawer. Changing layouts and nearby objects require coordinated grasping and placement.</p>
               </div>
               <svg class="rr-hud" viewBox="0 0 1600 900" role="img" aria-label="Synchronized stage, execution horizon, and horizon selection"></svg>
               <span class="rr-speed">Autonomous 1x</span>
@@ -390,11 +390,11 @@
             <div class="rr-controls">
               <button type="button" data-rr-toggle disabled>Play</button>
               <button type="button" data-rr-replay disabled>Replay</button>
-              <input type="range" min="0" max="29.6667" step="0.0333333333" value="0" data-rr-range aria-label="Rollout playback position" disabled>
-              <output data-rr-time>0:00 / 0:29</output>
+              <input type="range" min="0" max="25.1" step="0.0333333333" value="0" data-rr-range aria-label="Rollout playback position" disabled>
+              <output data-rr-time>0:00 / 0:25</output>
               <button type="button" data-rr-fullscreen hidden>Fullscreen</button>
             </div>
-            <p class="rr-footnote"><a data-rr-original href="assets/videos/real_h264/fold/fold_clean.mp4" target="_blank" rel="noopener">Original video ↗</a></p>
+            <p class="rr-footnote"><a data-rr-original href="assets/videos/real_h264/duck/duck_more_randomized.mp4" target="_blank" rel="noopener">Original video ↗</a></p>
           </article>
           <div class="rr-gallery-note"><p>Select a rollout to explore its stages and horizon choices.</p><span data-rr-count>12 rollouts</span></div>
           <div class="rr-clips" id="real-video-grid" role="group" aria-label="Select a real robot rollout">
@@ -603,7 +603,7 @@
     <script src="static/js/hero-hud.js?v=20260928-stage-v10"></script>
     <script src="static/js/hero-cameras.js?v=20260928-speed-left-v11"></script>
     <script src="static/js/rollout-hud.js?v=20260929-v27"></script>
-    <script src="static/js/real-robot.js?v=20260929-tasks-v28"></script>
+    <script src="static/js/real-robot.js?v=20260929-duck-default-v31"></script>
     <script src="static/js/teaser.js?v=20260929-evidence-v21"></script>
   </body>
 </html>

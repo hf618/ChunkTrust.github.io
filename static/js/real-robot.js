@@ -190,5 +190,6 @@
     const tick = () => { if (visible && !video.paused) draw(video.currentTime); requestAnimationFrame(tick); };
     requestAnimationFrame(tick);
   }
+  select(cards.find(card => card.dataset.clip === root.dataset.defaultClip) || cards[0]);
   filter();
 })();
