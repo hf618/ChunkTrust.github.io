@@ -1,4 +1,13 @@
 .teaser-motion { scroll-margin-top: 80px; }
+
+/* Keep the complete Core Idea animation and its controls in the viewport. */
+#teaser {
+  scroll-margin-top: calc(var(--header-height) + 18px);
+  width: min(100%, 960px, calc((100vh - 10rem) * 2400 / 1470));
+  width: min(100%, 960px, calc((100svh - 10rem) * 2400 / 1470));
+  margin-inline: auto;
+}
+
 .teaser-stage {
   overflow: hidden;
   aspect-ratio: 2400 / 1470;
