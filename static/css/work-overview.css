@@ -1,10 +1,13 @@
 .work-overview {
-  padding: clamp(2.5rem, 5vw, 4.5rem) 0 1rem;
+  scroll-margin-top: calc(var(--header-height) + 18px);
+  padding: clamp(2rem, 4vh, 3rem) 0 1rem;
   background: #fff;
 }
 
 .work-overview .section-shell {
-  width: min(1320px, calc(100% - 3rem));
+  /* Reserve room for the fixed header, heading, and section spacing. */
+  width: min(960px, calc(100% - 3rem), calc((100vh - 13rem) * 16 / 9));
+  width: min(960px, calc(100% - 3rem), calc((100svh - 13rem) * 16 / 9));
 }
 
 .work-overview h2 {
@@ -35,7 +38,10 @@
 }
 
 @media (max-width: 600px) {
-  .work-overview .section-shell { width: calc(100% - 1.5rem); }
+  .work-overview .section-shell {
+    width: min(calc(100% - 1.5rem), calc((100vh - 13rem) * 16 / 9));
+    width: min(calc(100% - 1.5rem), calc((100svh - 13rem) * 16 / 9));
+  }
   .work-overview h2 { margin-bottom: 1.1rem; }
   .work-overview-player { border-radius: 8px; }
 }
