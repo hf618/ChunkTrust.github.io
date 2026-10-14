@@ -52,10 +52,10 @@
   transform:translateY(-50%);
 }
 .hero-text { width:100%; max-width:none; margin-inline:auto; padding-top:clamp(1.5rem,2.5vw,3rem); text-align:center; text-shadow:0 1px 8px rgba(0,0,0,.55); }
-.hero h1 { display:flex; align-items:center; justify-content:center; gap:.65rem; width:fit-content; max-width:100%; margin:0 auto .8rem; }
-.hero-wordmark { flex:0 0 auto; margin:0; font-size:clamp(2.65rem,4.1vw,4.7rem); line-height:1.12; }
-.hero-subtitle { max-width:20em; font-size:clamp(1rem,1.35vw,1.5rem); line-height:1.35; text-wrap:balance; text-align:center; }
-.hero .desktop-break { display:none; }
+.hero h1 { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.65rem; width:100%; max-width:100%; margin:0 auto 1.15rem; }
+.hero-wordmark { flex:0 0 auto; margin:0; font-size:clamp(3.8rem,6vw,6.8rem); line-height:1.12; }
+/* Keep the full paper title on one centered line within the desktop HUD. */
+.hero .hero-subtitle { max-width:none; font-size:clamp(.9rem,1.5vw,1.85rem); line-height:1.4; white-space:nowrap; text-wrap:nowrap; text-align:center; }
 .hero-copy { max-width:none; margin-bottom:1.1rem; font-size:clamp(.78rem,.95vw,1rem); text-align:center; }
 .hero-actions { justify-content:center; gap:.65rem; }
 .hero-actions .button,
@@ -100,9 +100,9 @@
   .hero-media { order:1; }
   .hero-media .hero-shade { display:none; }
   .hero-text { width:94%; }
-  .hero h1 { flex-wrap:wrap; gap:.35rem; text-align:center; }
+  .hero h1 { gap:.35rem; text-align:center; }
   .hero-wordmark { font-size:clamp(3.3rem,9vw,4.5rem); }
-  .hero-subtitle { font-size:1.15rem; max-width:630px; text-wrap:pretty; text-align:center; }
+  .hero .hero-subtitle { font-size:1.15rem; max-width:630px; white-space:normal; text-wrap:pretty; text-align:center; }
   .hero-copy { font-size:.88rem; }
   .hero .author-list { font-size:.85rem; }
   .hero .affiliation-list { font-size:.73rem; }
